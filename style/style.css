@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
 /* 200, 300, 400, 500 */
 
@@ -17,7 +19,8 @@ h2 {
   font-weight: 400;
 }
 
-/* Page 1 */
+
+/**************** Page 1 ******************/
 .landingPage {
   display: flex;
 }
@@ -41,10 +44,11 @@ h2 {
 #movie h2 {
   padding-bottom: 45px;
 }
-/* ********************** */
+/************* end of Page 1 **************/
 
 
-/* Page 2 */
+
+/*************** Page 2 *******************/
 .watchlistPage {
   display: flex;
   flex-direction: column;
@@ -62,5 +66,92 @@ h2 {
 .watchlistPage button:hover {
   background-color: #e5dbcf;
 }
-/* ********************** */
+/************* end of Page 2 **************/
 
+
+
+
+
+/**************** Page 3 ******************/
+
+
+/* 1. Genres */
+.genres {
+  border: 1px solid black;
+  text-align: center;
+  height: 6em;
+}
+
+#genres-btn {
+  background-color: red;
+  cursor: pointer;
+}
+
+
+/* ** Range Sliders ** */
+.range-slider {
+  width: 480px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  height:6em;
+}
+
+input[type="button"] {
+  background-color: #a7c2dd;
+  border: 1px solid #ddd;
+  width: 4.9em;
+  text-align: center;
+  font-size: 1em;
+  padding-right: 13px;
+}
+
+input[type="button"]:hover {
+  background-color: #3490b7;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* the line once the cirlce is moved */
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: #6892bd;
+  border-radius: 10px;
+  border: 0;
+}
+
+input[type="number"] {
+  border: 1px solid #ddd;
+  width: 2.9em;
+  text-align: center;
+  font-size: 1em;
+}
+
+/* The slider cirlcles */
+input[type="range"]::-webkit-slider-thumb {
+  z-index: 2;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  border-radius: 25px;
+  background: #08111a;
+  cursor: pointer;
+  appearance: none;
+  margin-top: 0px;
+}
+
+
+#filtering-btn {
+  background-color: rgb(126, 68, 167);
+  width: 100px;
+  height:4em;
+}
+/************* end of Page 3 **************/
+
+
+/**************** Page 4 ******************/
