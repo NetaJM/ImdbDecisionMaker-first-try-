@@ -1,4 +1,4 @@
-// 3rd Page
+// Page 3
 
 const genresBtn = document.getElementById('filteringBtn');
 

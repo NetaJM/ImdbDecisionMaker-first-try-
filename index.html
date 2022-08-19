@@ -9,26 +9,22 @@
 </head>
 <body>
 
+  
 
-<!-- 1. Landing Page -->
-  <h1 id="title">IMDB DECISION MAKER</h1>
-  <h2>MOVIE OR A SHOW?</h2>
-<div class="landingPage">
-  <!-- Movie card -->
-  <button class="type" id="movie">
-    <h2>MOVIE</h2>
-      <img src="/img/movie.png" alt="Avatar" style="width:35%">
-  </button>
-  <!-- Show card -->
-    <button class="type" id="show">
-      <h2>SHOW </h2>
-    <img src="/img/show.png" alt="Avatar" style="width:30%">
-  </button>
-</div>
+  <div id="root">
+      <nav id="main-nav" class="sidenav">
+          <!-- <a href="/" onclick="route()">Home</a> -->
+          <a href="/pages/page1" onclick="route()">Movie or a Show</a>
+          <a href="/pages/page2" onclick="route()">Watchlists</a>
+          <a href="/pages/page3" onclick="route()">Genres</a>
+          <a href="/pages/page4" onclick="route()">Filtering Categories</a>
+          <a href="/pages/resultPage" onclick="route()">Result</a>
+      </nav>
 
+      <div id="main-page"></div>
+      
+  </div>
 
-
-<script src="/js/landingPage.js"></script>
-<!-- <script type="module" src="/js/landingPage.js"></script> -->
+  <script src="router.js"></script>
 </body>
 </html>

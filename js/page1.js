@@ -1,4 +1,4 @@
-// Landing Page
+// Page 1 
 
 const movieBtn = document.getElementById('movie');
 const showBtn = document.getElementById('show');
@@ -18,6 +18,3 @@ showBtn.addEventListener('click', secondPageRedirect);
 // function pageRedirect(page) {
 //   location.href = `${page}`
 // }; 
-
-
-

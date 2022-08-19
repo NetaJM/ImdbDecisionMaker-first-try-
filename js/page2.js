@@ -1,4 +1,4 @@
-// 2nd Page
+// Page 2
 
 const watchlistBtn = document.getElementById('watchlistPage');
 
