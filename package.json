@@ -1,0 +1,25 @@
+{
+  "name": "imdbdecisionmaker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 5600\" \"open http://localhost:5600/build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NetaJM/ImdbDecisionMaker.git"
+  },
+  "author": "Neta Milenkovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NetaJM/ImdbDecisionMaker/issues"
+  },
+  "homepage": "https://github.com/NetaJM/ImdbDecisionMaker#readme",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^7.3.0",
+    "http-server": "^14.1.1"
+  }
+}

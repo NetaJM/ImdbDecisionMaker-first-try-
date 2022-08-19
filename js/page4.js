@@ -1,3 +1,4 @@
+// 4th Page
 
 // if out of rangde - block
 
@@ -47,7 +48,7 @@ const filteringBtn = document.querySelector('#filtering-btn');
 const rangeFilteringBtn = document.getElementById('range-filtering-btn');
 
 function resultPageRedirect() {
-  location.href = "/pages/result.html"
+  location.href = "/pages/resultPage.html"
 }
 
 rangeFilteringBtn.addEventListener('click', resultPageRedirect);
