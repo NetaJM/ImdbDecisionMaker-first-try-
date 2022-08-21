@@ -2,8 +2,12 @@
 
 const watchlistBtn = document.getElementById('watchlistPage');
 
-function thirdPageRedirect() {
+function pageRedirect() {
   location.href = "/pages/page3.html"
 };
 
-watchlistBtn.addEventListener('click', thirdPageRedirect)
+if(watchlistBtn) {
+  watchlistBtn.addEventListener('click', pageRedirect);
+}
+
+// watchlistBtn.addEventListener('click', pageRedirect)

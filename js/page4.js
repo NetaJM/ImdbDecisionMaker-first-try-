@@ -2,7 +2,7 @@
 
 // if out of rangde - block
 
-const filteringBtn = document.querySelector('#filtering-btn');
+
 
 (function() {
   const parent = document.querySelector('.range-slider');
@@ -45,10 +45,15 @@ const filteringBtn = document.querySelector('#filtering-btn');
 })();
 
 
-const rangeFilteringBtn = document.getElementById('range-filtering-btn');
+const filteringBtn = document.getElementById('filtering-btn');
 
-function resultPageRedirect() {
+function pageRedirect() {
   location.href = "/pages/resultPage.html"
 }
 
-rangeFilteringBtn.addEventListener('click', resultPageRedirect);
+if(filteringBtn) {
+    filteringBtn.addEventListener('click', pageRedirect);
+  }
+
+
+// rangeFilteringBtn.addEventListener('click', pageRedirect);

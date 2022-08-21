@@ -4,13 +4,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="/style.css">
-  <title>Watchlists Options</title>
+ <link rel="stylesheet" href="/style/style.css">
+  <title>Imdb Decision Maker</title>
 </head>
 <body>
-  <!-- 2. Watchlist Page -->
+
+  <div class="page-content">
   <h1>PICK A WATCHLIST</h1>
+
   <div class="watchlistPage" id="watchlistPage">
+    <button type="submit" class="watchlist-type" id="my-watchlist" onclick="route()">
+  MY WATCHLIST</button>
+    <button type="submit" class="watchlist-type" id="top-picks" onclick="route()">
+      TOP PICKS FOR ME</button>
+    <button type="submit" class="watchlist-type" id="top-250" onclick="route()">
+      IMDB TOP 250</button>
+    <button type="submit" class="watchlist-type" id="random" onclick="route()">
+      FROM ANYWHERE ON IMDB</button>
+    </div>
+  </div>
+
+
+  <!-- <div class="watchlistPage" id="watchlistPage">
     <button class="watchlist-type" onclick="filterSelection('my-watchlist')">
     <h3>MY WATCHLIST</h3>
     </button>
@@ -23,10 +38,10 @@
     <button class="watchlist-type" onclick="filterSelection('random')">
     <h3>FROM ANYWHERE ON IMDB</h3>
     </button>
-    </div>
+    </div> -->
 
+    <script src="router.js"></script>
   <script src="/js/page2.js"></script>
-  <!-- <script type="module" src="/js/watchlistPage.js"></script> -->
   </body>
   </html>
 

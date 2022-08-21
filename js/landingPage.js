@@ -3,12 +3,12 @@
 const movieBtn = document.getElementById('movie');
 const showBtn = document.getElementById('show');
 
-function secondPageRedirect() {
-  location.href = '/pages/page2.html';
-}
+// function secondPageRedirect() {
+//   location.href = '/pages/page2.html';
+// }
 
-movieBtn.addEventListener('click', secondPageRedirect);
-showBtn.addEventListener('click', secondPageRedirect); 
+// movieBtn.addEventListener('click', secondPageRedirect);
+// showBtn.addEventListener('click', secondPageRedirect); 
 
 
 

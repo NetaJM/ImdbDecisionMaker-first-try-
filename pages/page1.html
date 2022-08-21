@@ -4,30 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="/style.css">
+ <link rel="stylesheet" href="/style/style.css">
   <title>Imdb Decision Maker</title>
 </head>
 <body>
-
-  <h1>MOVIE OR A SHOW?</h1>
-  <!-- <h1 id="title">IMDB DECISION MAKER</h1> -->
  
-<div class="landingPage">
-  <!-- Movie card -->
-  <button class="type" id="movie">
-    <h2>MOVIE</h2>
-      <img src="/img/movie.png" alt="Avatar" style="width:35%">
-  </button>
-  <!-- Show card -->
-    <button class="type" id="show">
-      <h2>SHOW </h2>
-    <img src="/img/show.png" alt="Avatar" style="width:30%">
-  </button>
+  <div id="main-page">
+<div class="page-content">
+  <h1>WHAT TO DO YOU WANT TO WATCH?</h1>
+<div class="movie-vs-show">
+  <button type="submit" class="movie-vs-show-btn" id="movie" href="/watchlists" onclick="route()">
+    A MOVIE</button>
+  <button type="submit" class="movie-vs-show-btn" id="show" href="/watchlists" onclick="route()">
+    A SHOW</button>
+</div>
+</div>
 </div>
 
-
-
+<script src="router.js"></script>
 <script src="/js/page1.js"></script>
-<!-- <script type="module" src="/js/landingPage.js"></script> -->
 </body>
 </html>

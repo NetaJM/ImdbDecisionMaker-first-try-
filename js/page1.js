@@ -3,12 +3,18 @@
 const movieBtn = document.getElementById('movie');
 const showBtn = document.getElementById('show');
 
-function secondPageRedirect() {
+function pageRedirect() {
   location.href = '/pages/page2.html';
 }
 
-movieBtn.addEventListener('click', secondPageRedirect);
-showBtn.addEventListener('click', secondPageRedirect); 
+// movieBtn.addEventListener('click', pageRedirect);
+// showBtn.addEventListener('click', pageRedirect); 
+
+if(movieBtn) {
+  movieBtn.addEventListener('click', function(){
+    alert(87388398)
+  });
+}
 
 
 
@@ -16,5 +22,6 @@ showBtn.addEventListener('click', secondPageRedirect);
 
 // General redirect function -> 
 // function pageRedirect(page) {
-//   location.href = `${page}`
+//   location.href = `'/pages/page${page}.html'`
 // }; 
+

@@ -4,39 +4,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="/style.css">
-  <title>Genre Options</title>
+ <link rel="stylesheet" href="/style/style.css">
+  <title>Imdb Decision Maker</title>
 </head>
 <body>
-<!-- 3. Genres Page-->
-
-<h1>Genre Options</h1>
-<h2>Genre/s:</h2>
-<form action="/pages/page4.html">
-<div class="genres">
-<label class="container">Comedy
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
-<label class="container">Drama
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">Thriller
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-<label class="container">Western
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-</div>
-<input type="submit" value="Next" id="genres-btn">
-</form>
 
   
 
+<div class="page-content">
+  <h1>Genre/s - </h1>
+  <form>
+  <div class="genres">
+  <label class="container">Comedy
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Drama
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Thriller
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <label class="container">Western
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  </div>
+  </form>
+  <button type="submit" id="genres-submit-btn" onclick="route()">
+    NEXT</button>
+</div>
+
+
+<script src="router.js"></script>
   <script src="/js/page3.js"></script>
-  <!-- <script type="module" src="/js/genresPage.js"></script> -->
   </body>
   </html>

@@ -18,60 +18,47 @@ h2 {
 }
 
 
-/**************** Home Page ******************/
-.sidenav {
-  height: 100%; 
-  width: 180px; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
-  left: 0;
-  background-color: #111; 
-  overflow-x: hidden; 
-  padding-top: 20px;
+/**************** index.html ******************/
+#root .navbar {
+  width: 100%;
+  background-color: rgb(205, 193, 193);
+  overflow: auto;
 }
 
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: #000;
   text-decoration: none;
-  font-size: 20px;
-  color: rgb(203, 201, 201);
-  display: block;
+  font-size: 17px;
+  width: 17%; 
+  text-align: center; 
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.navbar a:hover {
+  background-color: rgb(203, 172, 172);
 }
 
-.main {
-  margin-left: 160px; 
-  padding: 0px 10px;
+.navbar a.active {
+  background-color: #04AA6D;
 }
-/************* end of Home Page **************/
+/************* index.html **************/
 
 /**************** Page 1 ******************/
-.landingPage {
+.movie-vs-show {
   display: flex;
 }
 
-.type {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+.movie-vs-show-btn {
   transition: 0.3s;
   width: 50%;
+  height: 4rem;
   display: block;
-}
-
-
-.type:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.type h2 {
   font-weight: 400;
 }
 
-#movie h2 {
-  padding-bottom: 45px;
+.movie-vs-show-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 /************* end of Page 1 **************/
 
@@ -184,3 +171,18 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 /**************** Page 4 ******************/
+
+
+
+/*   R E S P O N S I V E  */
+
+/* index.html */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; 
+  }
+}
+/* index.html */
