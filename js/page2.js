@@ -1,4 +1,5 @@
 // Page 2
+console.log(67)
 
 const watchlistBtn = document.getElementById('watchlistPage');
 
@@ -9,5 +10,11 @@ function pageRedirect() {
 if(watchlistBtn) {
   watchlistBtn.addEventListener('click', pageRedirect);
 }
+
+
+if(watchlistBtn) {
+  watchlistBtn.addEventListener('click', pageRedirect);
+}
+
 
 // watchlistBtn.addEventListener('click', pageRedirect)
